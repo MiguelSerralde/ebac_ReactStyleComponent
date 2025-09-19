@@ -1,0 +1,123 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.search_container{
+    color: cyan;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;    
+}
+
+.search_form {
+    padding: 2rem;
+    font-size: 24px;
+    text-align: center;
+}
+
+.search_label{
+    padding: 1rem;
+}
+
+.search_input{
+    padding: 5px;
+    border-radius: 25px;   
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.search_button {
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    width: 100px;
+    font-weight: bold;
+}
+
+.search_button:hover{
+    cursor: pointer;
+    
+}
+
+.container_library{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    
+    background-color: #14080e;
+    color: aqua;
+    border-radius: 10px;
+    border: 3px solid #4F86C6;
+    margin: 1rem;
+}
+
+.band_container{
+   text-align: center;
+}
+
+.container_logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.band_banner{
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+.band_logo{
+    width: 300px;
+}
+
+.albums_container {
+    text-align: center;
+    color: cyan;
+}
+
+.albums_artist {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.album_data {
+    margin: rem;
+    padding: 3rem;    
+}
+
+.album_data:hover {
+    cursor: pointer;
+    border: solid 1px #4F86C6;
+    border-radius: 7px;
+}
+
+.coverAlbum {
+    width: 200px;
+}
+
+@media (max-width: 1180px){
+    .albums_artist {
+        grid-template-columns: repeat(3, 30%);
+    }
+}
+
+@media (max-width: 770px){
+    .albums_artist {
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+
+@media (max-width: 550px){
+    .albums_artist {
+        grid-template-columns: repeat(1, 100%);
+    }
+
+}
