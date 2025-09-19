@@ -2,7 +2,7 @@ import { useState } from "react";
 import Library from "./component/Library/Library";
 import Searchartist from "./component/Search/searchartist";
 import { Routes, Route } from "react-router-dom"
-import { GlobalStyle } from "./css/style";
+import { GlobalStyle } from "./themes/GlobalStyle";
 
 
 function App() {
