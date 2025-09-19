@@ -1,14 +1,15 @@
 import styled from "styled-components";
+import Theme from "../../component/theme/index"
 
 const ContainerLibrary = styled.div `
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;     
-    background-color: #14080e;
+    background-color: ${props => Theme.colors.backgroundContainerLibrary};
     color: aqua;
     border-radius: 10px;
-    border: 3px solid #4F86C6;
+    border: 3px solid ${props => Theme.colors.borderContainerLibray};
     margin: 1rem;    
 `
 

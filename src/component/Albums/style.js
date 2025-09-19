@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import Theme from "../../component/theme/index"
 
 const AlbumsContainer = styled.div `
     text-align: center;
-    color: cyan;
+    color: ${props => Theme.colors.textColor};
 `
 
 const AlbumsArtist = styled.section `

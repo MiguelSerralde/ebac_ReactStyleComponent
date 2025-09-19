@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { Themes } from "../../themes/index"
+import  Theme  from "../../component/theme/index"
 
-const SearchContainer = styled.div `
-    color: cyan;
+const SearchContainer = styled.div `    
+    color: ${props => Theme.colors.textColor};
     display: flex;
     flex-direction: column;
     height: 100vh;
