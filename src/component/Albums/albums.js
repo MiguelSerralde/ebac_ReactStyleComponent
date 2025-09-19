@@ -1,7 +1,7 @@
 //import "../../css/style.css"
 import axios from "axios"
 import React, { useEffect, useState } from 'react'
-import { AlbumsContainer, AlbumsArtist, AlbumData, CoverAlbum } from "./style"
+import { AlbumsContainer, AlbumsArtist, AlbumData, CoverAlbum, YearAlbum } from "./style"
 
 const Albums = ({artistName}) => {
   const [ albums, setAlbuns] = useState([])
@@ -30,16 +30,15 @@ const Albums = ({artistName}) => {
               let { idAlbum, strAlbum, strAlbumThumb, intYearReleased,strStyle} = album 
               if (!strStyle){
                 strStyle = "Not Data Found"
-              }
-
-              return(
-                <AlbumData key={idAlbum}>
-                  <h3>{strAlbum}</h3>                  
-                  <CoverAlbum src={strAlbumThumb}/>                  
-                  <p><b>Year: </b>{intYearReleased}</p>
-                  <p><b>Style: </b>{strStyle}</p>
-                </AlbumData>                
-              )
+              }              
+                return(
+                  <AlbumData key={idAlbum}>
+                    <h3>{strAlbum}</h3>                  
+                    <CoverAlbum src={strAlbumThumb}/> 
+                    <YearAlbum score={intYearReleased}><b>Year: </b>{intYearReleased}</YearAlbum>                 
+                    <p><b>Style: </b>{strStyle}</p>
+                  </AlbumData>                
+                )              
             }
             )
           )}        

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Theme from "../../component/theme/index"
 
+
 const AlbumsContainer = styled.div `
     text-align: center;
     color: ${props => Theme.colors.textColor};
@@ -38,10 +39,16 @@ const AlbumData = styled.article `
 const CoverAlbum = styled.img `
     width: 200px;
 `
+const YearAlbum = styled.p `
+    color: ${({score}) => 
+    (score >= 2010 ? "#74b667ff" : "cyan")}
+    
+`
 
 export {
     AlbumsContainer,
     AlbumsArtist,
     AlbumData,
-    CoverAlbum
+    CoverAlbum , 
+    YearAlbum   
 }
